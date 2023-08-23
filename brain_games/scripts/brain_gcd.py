@@ -17,7 +17,7 @@ def true_answer_message():
 def main():
     welcome_user()
     name = prompt.string('May I have your name? ')
-    print("Hello," + name)
+    print("Hello, " + name)
     print("Find the greatest common divisor of given numbers.")
     i = 0
 
