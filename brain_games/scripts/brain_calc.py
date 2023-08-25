@@ -14,7 +14,7 @@ def main():
 
     welcome_user()
     name = prompt.string('May I have your name? ')
-    print("Hello," + name)
+    print("Hello, " + name)
     print("What is the result of the expression?")
     ops = ['+', '-', '*']
     i = 0
