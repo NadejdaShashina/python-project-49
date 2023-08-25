@@ -5,7 +5,8 @@ def welcome_user():
     print("Welcome to the Brain Games!")
 
 def wrong_answer(name, your_answer, maths):
-    print("'", your_answer, "' is wrong answer ;(. Correct answer was '", maths,"'.", sep='')
+    ins_text = "' is wrong answer ;(. Correct answer was '"
+    print("'", your_answer, ins_text, maths,"'.", sep='')
     print("Let's try again, " + name + "!")
 
 def true_answer():

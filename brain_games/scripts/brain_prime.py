@@ -1,4 +1,5 @@
-import prompt, random
+import prompt
+import random
 
 
 def welcome_user():
@@ -6,7 +7,8 @@ def welcome_user():
 
 
 def wrong_answer(name, your_answer, maths):
-    print("'", your_answer, "' is wrong answer ;(. Correct answer was '", maths, "'.", sep='')
+    ins_text = "' is wrong answer ;(. Correct answer was '"
+    print("'", your_answer, ins_text , maths, "'.", sep='')
     print("Let's try again, " + name + "!")
 
 
@@ -31,7 +33,7 @@ def main():
         num1 = random.randint(1, 99)
         print("Question:", num1)
         bool_true_answer = is_prime(num1)
-        if (bool_true_answer == True) and (num1 != 1):
+        if ((bool_true_answer == True) and (num1 != 1)):
             true_answer = "yes"
         else:
             true_answer = "no"

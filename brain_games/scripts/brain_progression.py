@@ -6,7 +6,8 @@ def welcome_user():
 
 
 def wrong_answer(name, your_answer, true_answer):
-    print("'", your_answer, "' is wrong answer ;(. Correct answer was '", true_answer, "'.", sep='')
+    ins_text = "' is wrong answer ;(. Correct answer was '"
+    print("'", your_answer, ins_text, true_answer, "'.", sep='')
     print("Let's try again, " + name + "!")
 
 
