@@ -31,7 +31,7 @@ def main():
         num1 = random.randint(1, 99)
         print("Question:", num1)
         bool_true_answer = is_prime(num1)
-        if bool_true_answer == True:
+        if (bool_true_answer == True) and (num1 != 1):
             true_answer = "yes"
         else:
             true_answer = "no"
