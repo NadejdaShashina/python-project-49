@@ -1,4 +1,5 @@
-import prompt, random, math
+import prompt
+import random
 
 
 def welcome_user():
@@ -49,6 +50,7 @@ def main():
             wrong_answer(name, your_answer, miss_num)
             break
         round += 1
+
 
 if __name__ == '__main__':
     main()

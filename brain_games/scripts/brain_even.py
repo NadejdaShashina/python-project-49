@@ -1,4 +1,5 @@
-import prompt, random
+import prompt
+import random
 
 
 def welcome_user():
@@ -6,8 +7,8 @@ def welcome_user():
     name = prompt.string('May I have your name? ')
     print("Hello, " + name)
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    i=0
-    while i<3:
+    i = 0
+    while i < 3:
         sym1 = random.randint(0, 100)
         print("Question:", sym1)
         your_answer = prompt.string('Your answer: ')
@@ -31,6 +32,7 @@ def welcome_user():
 def main():
 
     welcome_user()
+
 
 if __name__ == '__main__':
 

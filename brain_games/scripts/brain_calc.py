@@ -1,16 +1,21 @@
-import prompt, random
+import prompt
+import random
 
 
 def welcome_user():
     print("Welcome to the Brain Games!")
+
 
 def wrong_answer(name, your_answer, maths):
     ins_text = "' is wrong answer ;(. Correct answer was '"
     print("'", your_answer, ins_text, maths,"'.", sep='')
     print("Let's try again, " + name + "!")
 
+
 def true_answer():
     print("Correct!")
+
+
 def main():
 
     welcome_user()
@@ -36,7 +41,9 @@ def main():
             wrong_answer(name, your_answer, maths)
             break
         i += 1
- 
+
+
 if __name__ == '__main__':
 
     main()
+    

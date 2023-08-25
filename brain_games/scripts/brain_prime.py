@@ -8,7 +8,7 @@ def welcome_user():
 
 def wrong_answer(name, your_answer, maths):
     ins_text = "' is wrong answer ;(. Correct answer was '"
-    print("'", your_answer, ins_text , maths, "'.", sep='')
+    print("'", your_answer, ins_text, maths, "'.", sep='')
     print("Let's try again, " + name + "!")
 
 
@@ -19,8 +19,9 @@ def true_answer_message():
 def is_prime(number):
     for i in range(2, int(number ** 0.5) + 1):
         if number % i == 0:
-            return False
-    return True
+            return "no"
+    if number > 1:
+        return "yes"
 
 
 def main():
@@ -32,11 +33,7 @@ def main():
     while i < 3:
         num1 = random.randint(1, 99)
         print("Question:", num1)
-        bool_true_answer = is_prime(num1)
-        if ((bool_true_answer == True) and (num1 != 1)):
-            true_answer = "yes"
-        else:
-            true_answer = "no"
+        true_answer = is_prime(num1)
         your_answer = prompt.string('Your answer: ')
         if your_answer == true_answer:
             true_answer_message()
