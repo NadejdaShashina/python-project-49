@@ -8,7 +8,7 @@ def welcome_user():
 
 def wrong_answer(name, your_answer, maths):
     ins_text = "' is wrong answer ;(. Correct answer was '"
-    print("'", your_answer, ins_text, maths,"'.", sep='')
+    print("'", your_answer, ins_text, maths, "'.", sep='')
     print("Let's try again, " + name + "!")
 
 
@@ -46,4 +46,3 @@ def main():
 if __name__ == '__main__':
 
     main()
-    
